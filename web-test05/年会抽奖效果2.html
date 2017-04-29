@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 300px;
+				height: 150px;
+				margin: 30px auto;
+			}
+			#box input{
+				width: 100px;
+				height: 50px;
+				background: red;
+				color: white;
+				font-size: 15px;
+				border-radius: 10px;
+			}
+			#img{
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var btns=document.getElementById("btn_start");
+				var btne=document.getElementById("btn_end");
+				var img=document.getElementById("img");
+				//用来存储图片路径的数组
+				var arr=['images/img1.jpg','images/img2.jpg'];
+				var timer;
+				//给开始按钮加单击事件
+				btns.onclick=function(){
+					clearInterval(timer);
+					//设置定时器，每隔一秒换一个图片
+					timer=setInterval(function(){
+						//抽取随机下标
+						var num=Math.floor(Math.random()*(arr.length-1+1-0)+0);
+						//将num号路径设置为图片
+						img.setAttribute('src',arr[num]);
+					},30);
+				}
+				//停止定时器
+				btne.onclick=function(){
+					clearInterval(timer);
+					//生成随机数
+					var num2=Math.random()*10;
+					if(num2<=9)
+					{
+						img.setAttribute('src',arr[0]);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="box">
+			<input type="button" value="开始抽奖" id="btn_start" />
+			<input type="button" value="结束抽奖" id="btn_end"/>
+		</div>
+		<img src="images/img1.jpg" id="img" width="400px" height="300px" />
+	</body>
+</html>

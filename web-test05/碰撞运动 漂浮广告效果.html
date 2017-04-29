@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 300px;
+				height: 200px;
+				background: orangered;
+				position: absolute;
+				left:0px;
+				top:0px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				//抓取元素
+				var box=document.getElementById("box");
+				//h获取可视区域的宽高
+				var win_width=document.documentElement.clientWidth; //1280
+				var win_height=document.documentElement.clientHeight; //627
+				//计算出最大运行区域
+				var max_left=win_width-box.offsetWidth;
+				var max_top=win_height-box.offsetHeight;
+				var x=1,y=1;
+				
+				setInterval(function(){
+					//获取旧元素的宽高值
+					var oldLeft=box.offsetLeft;
+					var oldTop=box.offsetTop;
+					//计算新元素的宽高值
+					var newLeft=oldLeft+x;
+					var newTop=oldTop+y;
+					//将新元素的值赋值给元素样式
+					box.style.left=newLeft+'px';
+					box.style.top=newTop+'px';
+					if(newTop==max_top)
+					{
+						y=-1;
+					}
+					if(newTop==0){
+						y=1;
+					}
+					if(newLeft==max_left){
+						x=-1;
+					}
+					if(newLeft==0)
+					{
+						x=1;
+					}
+				},10);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="box">
+			<img src="images/timg.jpg" width="25px" />			
+		</div>
+	</body>
+</html>

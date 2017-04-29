@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var con=document.getElementById("zc");
+				//获得元素的class名称属性
+//				alert(con.className);
+				//获得元素的id属性
+//				alert(con.id);
+
+				//获得任意属性
+				var re=con.getAttribute('class');
+				alert(re);
+				
+				//设置任意属性
+				var ree=con.setAttribute('class','newclassname');
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h3 id="zc" class="zcclass">你好世界</h3>
+	</body>
+</html>
