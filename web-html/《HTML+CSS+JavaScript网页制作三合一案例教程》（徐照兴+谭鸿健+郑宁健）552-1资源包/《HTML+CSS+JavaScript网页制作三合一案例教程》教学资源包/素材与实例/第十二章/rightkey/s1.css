@@ -1,0 +1,41 @@
+@charset "utf-8";
+.x1 {
+	list-style-position: outside;
+	list-style-image: url(images/gif-0752.gif);
+}
+body {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+	color: #333;
+	text-decoration: none;
+	background-color: #E4E4E4;
+	margin: 0px;
+}
+.table2 {
+	background-image: url(images/a_04.gif);
+}
+.table5 {
+	background-image: url(images/a_21.gif);
+	text-align: center;
+	height: 90px;
+}
+
+.image {
+	border: 1px solid #CCCCCC;
+}
+.border {
+	background-image: url(images/sub_1_08.gif);
+	background-repeat: repeat-y;
+}
+.border2 {
+	background-image: url(images/sub_1_10.gif);
+	background-repeat: repeat-y;
+}
+.bg {
+	background-image: url(images/sub_1_25.gif);
+	background-repeat: repeat-x;
+	height: 25px;
+	font-weight: bold;
+	color: #CB1616;
+}

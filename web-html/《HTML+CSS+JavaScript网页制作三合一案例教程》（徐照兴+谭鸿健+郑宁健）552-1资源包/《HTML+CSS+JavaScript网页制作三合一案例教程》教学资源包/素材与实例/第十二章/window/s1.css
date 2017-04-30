@@ -1,0 +1,29 @@
+body {
+	font-size: 12px;
+	line-height: 20px;
+	margin: 0px;
+}
+.line {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #0D9EF1;
+	line-height: 25px;
+}
+.top {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #5BBCF7;
+}
+.line1 {
+	border: 1px solid #E1E1E1;
+}
+
+.list {
+	font-size: 12px;
+	line-height: 22px;
+	color: #666666;
+	text-align: left;
+	margin-top: 8px;
+	list-style-position: outside;
+	list-style-type: disc;
+}

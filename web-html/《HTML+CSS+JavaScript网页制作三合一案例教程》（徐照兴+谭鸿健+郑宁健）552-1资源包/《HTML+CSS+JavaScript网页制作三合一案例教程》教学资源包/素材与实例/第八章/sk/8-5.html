@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#box{							/*设置外层div*/
+	width:400px; 					/*设置宽度*/
+	padding:5px; 					/*设置内边距*/
+	border:1px #000000 solid; 		/*设置边框*/
+	height:auto; 					/*设置高度为自动*/
+	font-size:12px; 				/*设置文字大小*/
+	color:#FFFFFF; 				/*设置文字颜色*/
+}
+#left {							/*设置内层第1个div*/
+	width:200px;
+	height:100px;
+	background:#993300;
+	float:left; 					/*设置左浮动*/
+}
+#right{							/*设置内层第2个div*/
+	width:200px;
+	height:100px;
+	background:#CC6666;
+	float:left;
+}
+.clear{
+	clear:left;			    /*清除左浮动*/
+	height:1px; 			/*设置高度为1px；*/
+	overflow:hidden;		/*裁切出多余的区域*/
+}
+
+</style>
+</head>
+
+<body>
+<div id="box">
+	<div id="left">左侧栏目</div>
+	<div id="right">右侧栏目</div>
+    <div class="clear"></div>
+</div>
+
+</body>
+</html>

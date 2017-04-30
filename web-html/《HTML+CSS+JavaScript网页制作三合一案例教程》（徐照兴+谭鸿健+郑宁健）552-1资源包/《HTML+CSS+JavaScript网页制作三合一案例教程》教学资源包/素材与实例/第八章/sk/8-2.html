@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#one {
+	width:500px; 					/*设置外围div的宽度*/
+	height:20px;					/*设置外围div的高度*/
+}
+.box {
+	float:left; 					/*设置3个子div向左浮动*/
+	width:100px; 					/*设置3个子div的宽度为100像素*/
+	margin-left:50px; 				/*设置3个子div均和左边的元素有50像素的距离*/
+	background-color:#00CCFF; 	/*设置3个子div的背景色*/
+	height:20px; 					/*设置3个子div的高度为20像素*/
+	display:inline;/*将块状元素转变为行内元素，在此可以调整兼容性*/
+}
+#two {
+	width:100px; 					/*设置作为对比的div的宽度*/
+	background-color:#CC6600;		/*设置作为对比的div的背景色*/
+	height:20px; 					/*设置作为对比的div的高度*/
+}
+</style>
+</head>
+
+<body>
+<div id="one">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+<div id="two">100个像素宽</div>     <!--此DIV只用来作为宽度对比，无实际意义-->
+</body>
+</html>

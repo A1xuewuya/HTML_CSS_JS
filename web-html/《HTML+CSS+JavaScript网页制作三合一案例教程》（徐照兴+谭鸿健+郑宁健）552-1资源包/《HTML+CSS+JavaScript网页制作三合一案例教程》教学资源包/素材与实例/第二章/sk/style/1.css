@@ -1,0 +1,9 @@
+h2{
+	color:#0000FF;                  /*设置h2标签文本的颜色*/
+}
+p{
+	color:#FF00FF;                  /*设置p标签文本的颜色*/
+	text-decoration:underline;      /*设置p标签文本下划线*/
+	font-weight:bold;               /*设置p标签文本加粗*/
+	font-size:20px;                 /*设置p标签文本字号为20px*/
+}
